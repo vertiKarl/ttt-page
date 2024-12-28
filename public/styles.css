@@ -30,6 +30,7 @@ html {
     --Base: #1e1e2e;
     --Mantle: #181825;
     --Crust: #11111b;
+    height: 100%;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    height: 100%;
 }
 
 #title {
