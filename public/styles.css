@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --Rosewater: #f5e0dc;
+    --Flamingo: #f2cdcd;
+    --Pink: #f5c2e7;
+    --Mauve: #cba6f7;
+    --Red: #f38ba8;
+    --Maroon: #eba0ac;
+    --Peach: #fab387;
+    --Yellow: #f9e2af;
+    --Green: #a6e3a1;
+    --Teal: #94e2d5;
+    --Sky: #89dceb;
+    --Sapphire: #74c7ec;
+    --Blue: #89b4fa;
+    --Lavender: #b4befe;
+    --Text: #cdd6f4;
+    --Subtext1: #bac2de;
+    --Subtext0: #a6adc8;
+    --Overlay2: #9399b2;
+    --Overlay1: #7f849c;
+    --Overlay0: #6c7086;
+    --Surface2: #585b70;
+    --Surface1: #45475a;
+    --Surface0: #313244;
+    --Base: #1e1e2e;
+    --Mantle: #181825;
+    --Crust: #11111b;
+}
+
+body {
+    background-color: var(--Surface0);
+    color: var(--Text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#title {
+    color: var(--Mauve);
+    font-weight: bold;
+}
+
+.box {
+    display: block;
+    width: 50vw;
+    padding: 2rem;
+    margin-top: 5rem;
+    background-color: var(--Surface1);
+}
+
+.subbox {
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+}
+
+.subbox>a {
+    width: 100%;
+    background-color: var(--Surface2);
+    padding: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+#password {
+    background-color: var(--Surface2);
+    border: none;
+    color: var(--Text);
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.copy {
+    background: var(--Surface2);
+    padding-right: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#linkbutton {
+    background-color: var(--Mauve);
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+a {
+    text-decoration: none;
+    /* Remove underline */
+    color: var(--Blue);
+    /* A nice blue color */
+    font-weight: 500;
+    /* Slightly bolder text */
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
