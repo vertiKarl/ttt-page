@@ -11,14 +11,23 @@
 
 <body>
     <h1 id="title">Karl in Terrorist Town</h1>
-    <div class="box">
-        <h2 class="text-center">Generate a Join-Link!</h1>
-            <input id="password" placeholder="Password">
+    <div class="box" id="main">
+        <noscript>
+            <h2>No JavaScript</h2>
+            <p>Sorry but this page requires JavaScript.</p>
+            <p>To join manually instead follow the instructions in the <a href="https://vertikarl.github.io/ktt-docs/joining/">docs</a>.</p>
+        </noscript>
+        <div class="script">
+            <h2 class="text-center">Generate a Join-Link!</h1>
+            <p>Klicke auf die Aufforderung des Browsers Steam zu öffnen!</p>
+            <p>Falls du sie weggeklickt haben solltest einfach die Seite <a href="/">neuladen</a></p>
+            <small>Oder um manuell zu joinen kannst du dir unten einfach einen Beitrittslink anzeigen lassen</small>
             <div class="subbox">
                 <a id="linkbox"></a>
                 <button id="copybutton" class="copy" onclick="copyLink()">🗐</button>
                 <button id="linkbutton" onclick="generateLink()">Generate Link!</button>
             </div>
+        </div>
     </div>
 </body>
 
