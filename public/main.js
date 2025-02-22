@@ -36,12 +36,11 @@ async function getIp() {
 
 async function generateLink() {
   const ip = await getIp();
-  const linkbox = document.getElementById("linkbox");
   if (ip) {
     /*
-        Steam Connect URL Schema:
-        steam://connect/<IP>[:<port>][/<password>]
-        */
+    Steam Connect URL Schema:
+    steam://connect/<IP>[:<port>][/<password>]
+    */
     return `steam://connect/${ip}:27015`;
   } else {
     return "";
@@ -66,15 +65,21 @@ function copyLink() {
   }, 1500);
 }
 
-(async () => {
+window.onload = async () => {
+  for (const element of document.getElementsByClassName("script")) {
+    element.classList.remove("script");
+  }
+
   const link = await generateLink();
+  const linkbox = document.getElementById("linkbox");
+  linkbox.href = link;
+  linkbox.innerHTML = link;
 
   if (link) {
-    console.log("opening link");
     window.location.href = await generateLink();
   } else {
     console.error(
       "Sorry but it seems like the domain is currently not resolvable check back later."
     );
   }
-})();
+};

@@ -11,27 +11,24 @@
 
 <body>
     <h1 id="title">Karl in Terrorist Town</h1>
-    <div id="has-script"></div>
-    <noscript>
-        <div class="box">
+    <div class="box" id="main">
+        <noscript>
+            <h2>No JavaScript</h2>
+            <p>Sorry but this page requires JavaScript.</p>
+            <p>To join manually instead follow the instructions in the <a href="https://vertikarl.github.io/ktt-docs/joining/">docs</a>.</p>
+        </noscript>
+        <div class="script">
             <h2 class="text-center">Generate a Join-Link!</h1>
-                <p>You are seeing this page because you do not allow JavaScript.</p>
-                <input id="password" placeholder="Password">
-                <div class="subbox">
-                    <a id="linkbox"></a>
-                    <button id="copybutton" class="copy" onclick="copyLink()">🗐</button>
-                    <button id="linkbutton" onclick="generateLink()">Generate Link!</button>
-                </div>
+            <p>Klicke auf die Aufforderung des Browsers Steam zu öffnen!</p>
+            <p>Falls du sie weggeklickt haben solltest einfach die Seite <a href="/">neuladen</a></p>
+            <small>Oder um manuell zu joinen kannst du dir unten einfach einen Beitrittslink anzeigen lassen</small>
+            <div class="subbox">
+                <a id="linkbox"></a>
+                <button id="copybutton" class="copy" onclick="copyLink()">🗐</button>
+                <button id="linkbutton" onclick="generateLink()">Generate Link!</button>
+            </div>
         </div>
-    </noscript>
+    </div>
 </body>
-
-<script>
-    const div = document.getElementById("has-script");
-    div.innerHTML = `
-    <p>Klicke auf die Aufforderung des Browsers Steam zu öffnen!</p>
-    <p>Falls du sie weggeklickt haben solltest einfach die Seite <a href="/">neuladen</a></p>
-    `
-</script>
 
 </html>
